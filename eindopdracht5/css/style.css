@@ -1,44 +1,72 @@
 img{
-    height: 240px;
-    width: 240px;
+  position: relative;
+  height: 240px;
+  width: 240px;
+  top: 16px;
 }
 
 body {
-    position: relative;
-    left: 13%;
+  position: relative;
+  left: 13%;
+  background-color: #818181;
+}
+
+#info{
+  display: flex;
+}
+
+div h1{
+  background-color: white;
+}
+
+#info p {
+  max-width: 70%;
+  overflow-y: auto;
+}
+
+#bio{
+  background-color: white;
+}
+
+#stats{
+    width: 240px;
+}
+
+#stats p{
+    padding: 1px;
 }
 
 .sidenav {
-    width: 160px; 
-    position: fixed; 
-    z-index: 1;
-    top: 0; 
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden; 
-    padding-top: 20px;
-  }
+  width: 160px; 
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
   
   .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
   }
   
 
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
-  .main {
-    margin-left: 160px; 
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

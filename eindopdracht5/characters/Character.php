@@ -28,12 +28,23 @@
             <title>Document</title>
         </head>
         <body>
-            <?php foreach($people as $person){ ?>
-                <h1><?= $person['name'] ?></h1>
-                <p><?= $person['bio'] ?></p>
-                <img src=images/<?= $person['avatar']?> >
+            <div>
+                <?php foreach($people as $person){ ?>
+                    <h1><?= $person['name'] ?></h1>
+                    <div id="info">
+                        <p id="bio"><?= $person['bio'] ?></p>
+                        <img src=images/<?= $person['avatar']?> >
+                    </div>
+                    <div id="stats" style="background-color: <?= $person['color'] ?> ">
+                        <p>&#9829; <?= $person['health'] ?></p>
+                        <p>&#127919; <?= $person['attack'] ?></p>
+                        <p>&#9930; <?= $person['defense'] ?></p>
 
-            <?php } ?>
+                        <p>Weapon: <?= $person['weapon'] ?></p>
+                        <p>Armor: <?= $person['armor'] ?></p>
+                    </div>
+                <?php } ?>
+            </div>
 
         </body>
         </html>
